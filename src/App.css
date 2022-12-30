@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.title span {
+    border-bottom: 5px solid rgb(255, 0, 140);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page {
+    margin-top: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page p:not(:last-child) {
+    margin-bottom: 24px;
+}
+.mainNavigation{
+    justify-content: flex-end;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav a {
+    padding: 8px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid rgb(255, 0, 140);
+    color: rgb(255, 0, 140);
+}
+nav a:not(:last-child){
+    border-right: 0;
+}
+nav a:hover {
+    background-color: rgb(255 0 140 / 5%);
+    color: rgb(255, 0, 140);
 }
 
-.App-link {
-  color: #61dafb;
+nav a.active {
+    background-color: rgb(255, 0, 140);
+    color: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.historyNavigation a{
+    border: 1px solid rgb(0 137 255);
+    color: rgb(0 137 255);
+}
+.historyNavigation a:hover{
+    color: rgb(0 137 255);
+    background-color: rgb(0 137 255 / 5%);
+}
+.historyNavigation a.active:hover{
+    color: #fff;
+}
+.historyNavigation a.active{
+    background-color: rgb(0 137 255);
 }
